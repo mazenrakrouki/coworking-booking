@@ -2,6 +2,40 @@
 
 Ce projet implémente un système de réservation d'espaces de coworking en utilisant GraphQL, Node.js et MongoDB.
 
+1. Analyse du Problème
+Problème :
+Gérer les réservations de bureaux/salles sans conflits horaires, remplacer un système manuel (Google Sheets).
+
+Entités & Relations :
+
+Utilisateur : Membre du coworking
+
+Espace : Bureau ou salle de réunion
+
+Réservation : Créneau horaire attribué à un utilisateur pour un espace
+
+Relations :
+
+Un Utilisateur peut avoir plusieurs Réservations
+
+Un Espace peut avoir plusieurs Réservations
+
+Une Réservation appartient à un Utilisateur et un Espace
+
+Fonctionnalités (Web Service GraphQL) :
+
+Gestion des utilisateurs (CRUD)
+
+Gestion des espaces (CRUD)
+
+Recherche des espaces disponibles par créneau
+
+Création/annulation de réservations
+
+Vérification des conflits horaires
+
+
+
 ## Fonctionnalités
 
 - Gestion des espaces (bureaux et salles de réunion)
